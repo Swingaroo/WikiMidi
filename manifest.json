@@ -4,7 +4,7 @@
   "short_name":"WikiMidi",
   "author" : "Stanislav Reznikov",
   "version": "1.0", 
-  "homepage_url":"",
+  "homepage_url":"https://github.com/Swingaroo/WikiMidi",
   "icons": { "128": "img/icon.png" },
   "permissions": [
     "tabs",
