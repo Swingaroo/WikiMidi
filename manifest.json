@@ -1,0 +1,24 @@
+{
+  "manifest_version":2,
+  "name": "Wikipedia MIDI player", 
+  "short_name":"WikiMidi",
+  "author" : "Stanislav Reznikov",
+  "version": "1.0", 
+  "homepage_url":"",
+  "icons": { "128": "img/icon.png" },
+  "permissions": [
+    "tabs",
+	"*.wikipedia.org",
+	"*.wikimedia.org"
+	],
+  "description": "Very basic MIDI player for direct playback from Wikipedia articles. All MIDI code courtesy of Matt Wescott https://github.com/gasman/jasmid",   
+   "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "run_at": "document_end",
+      "js": ["js/audio.js", "js/midifile.js", "js/replayer.js", "js/stream.js", "js/synth.js", "js/startup.js"],
+      "css": ["css/css.css"]
+    }
+  ],
+  "web_accessible_resources": ["img/btn.png", "img/btnStop.png"]
+}
